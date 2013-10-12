@@ -1,0 +1,485 @@
+﻿/*! normalize.css - http://github.com/necolas/normalize.css */
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ * Remove excess height in iOS5 devices
+ */
+audio:not([controls]){display:none;height:0}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+[hidden]{display:none;}
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Keeps page centred in all browsers regardless of content height
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+   4. Fix for webkit rendering
+ * 5. A safe default for type of any size.
+ */
+
+html {
+    font-size:100%; /* 1 */
+    overflow-y:scroll;/*  2 */
+    -webkit-text-size-adjust:100%; /* 3 */
+    -ms-text-size-adjust:100%; /* 3 */
+	-webkit-font-smoothing:antialiased; /* 4 */
+	line-height:1.5; /* 5 */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+body {margin:0}
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+a:focus{outline:thin dotted}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+a:hover,a:active{outline:0}
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses font sizes and margins set differently in IE6/7
+ * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
+ */ 
+h1,h2,h3,h4,h5,h6{margin:0;padding:0}
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+abbr[title]{border-bottom: 1px dotted}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+b,strong{font-weight:bold}
+
+blockquote{font-family:Georgia,"Times New Roman",Times,serif}
+blockquote p{display:inline}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+dfn {font-style:italic}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+mark {background:#ff0;color:#000}
+
+/*
+ * Addresses margins set differently in IE6/7
+ */
+p,pre{margin:0}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+
+/* 1 */
+q{quotes:none}
+
+/* 2 */
+q:before,q:after{content:'';content:none}
+small{font-size:80%}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+/*
+ * Addresses margins set differently in IE6/7
+ */
+dl,ol,ul{margin:0;padding:0;list-style:none;list-style-image:none}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {border:0;/* 1 */ -ms-interpolation-mode:bicubic;/* 2 */}
+
+/*
+ * Corrects overflow displayed oddly in IE9
+ */
+svg:not(:root){overflow:hidden}
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+figure{margin:0}
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+   
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+
+form{margin:0}
+
+/*
+ * Define consistent border, margin, and padding
+ */
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3
+ * 3. Corrects alignment displayed oddly in IE6/7
+ */
+legend {border:0;/* 1 */ padding:0; white-space:normal;/* 2 */ *margin-left:-7px;/* 3 */}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ * 4. Addresses font-family inconsistency between 'textarea' and other form elements.
+ * 5. Removes the rounded corners on mobile.
+ */
+button,input,select,textarea{font-size:100%;/* 1 */margin:0;/* 2 */vertical-align:baseline;/* 3 */*vertical-align:middle;/* 3 */font-family:sans-serif; /* 4 */-webkit-appearance:none;border-radius:0;-moz-border-radius:0; /* 5 */}
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+button,input{line-height:normal;/* 1 */}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;/* 1 */-webkit-appearance:button;/* 2 */*overflow:visible;/* 3 */}
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+button[disabled],input[disabled]{cursor:default}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
+ */
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box; /* 1 */padding:0; /* 2 */*height:13px; /* 3 */*width:13px; /* 3 */}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+input[type="search"]{-webkit-appearance:textfield;/* 1 */-moz-box-sizing:content-box;-webkit-box-sizing:content-box;/* 2 */box-sizing:content-box;}
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
+input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button {-webkit-appearance:none;}
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+textarea {overflow:auto;/* 1 */ vertical-align:top/* 2 */}
+textarea,input[type="text"],input[type="email"],input[type="password"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells
+ */
+table{border-collapse:collapse;border-spacing:0}
+tr:nth-of-type(odd) {background:rgba(0,0,0,.05)}
+
+
+
+/* =============================================================================
+   LAYOUT
+   ========================================================================== */
+.wrapper {margin:0 auto}
+
+.grids{margin-left:-30px}
+[class*="grid-"]{display:inline;float:left;margin-left:30px}
+.grid-12{margin-right:0}
+
+/* Grid 1080px */
+.wrapper{width:1050px}
+.grid-1{width:60px}.grid-2{width:150px}.grid-3{width:240px}.grid-4{width:330px}.grid-5{width:420px}.grid-6{width:510px}.grid-7{width:600px}.grid-8{width:690px}.grid-9{width:780px}.grid-10{width:870px}.grid-11{width:960px}.grid-12{width:1030px}
+
+/* Grid 960px (mediaqueries) */
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+.wrapper{width:930px}
+.grid-1{width:50px}.grid-2{width:130px}.grid-3{width:210px}.grid-4{width:290px}.grid-5{width:370px}.grid-6{width:450px}.grid-7{width:530px}.grid-8{width:610px}.grid-9{width:690px}.grid-10{width:770px}.grid-11{width:850px}.grid-12{width:910px}
+}
+	
+/* Grid 800px (mediaqueries) */
+@media only screen and (min-width: 801px) and (max-width: 959px) {
+.wrapper{width:700px}
+.grids{margin-left:-20px}
+[class*="grid-"]{margin-left:20px}
+.grid-1{width:40px}.grid-2{width:100px}.grid-3{width:160px}.grid-4{width:220px}.grid-5{width:280px}.grid-6{width:340px}.grid-7{width:400px}.grid-8{width:460px}.grid-9{width:520px}.grid-10{width:580px}.grid-11{width:640px}.grid-12{width:680px}
+}
+
+/* Grid lt 800px / Mobile (mediaqueries */
+@media only screen and (max-width: 800px) {
+.wrapper{width:90%}
+.grids,
+[class*="grid-"]{width:100%;margin-left:0;margin-right:0}
+html{font-size:1.125em /* Make text slightly larger for smaller devices to improve readability. */}
+body{-webkit-text-size-adjust:none}
+}
+
+
+/* =============================================================================
+   CLASSES
+   ========================================================================== */
+/*
+Some not-too-pretty and insemantic classes to do odd jobs.
+*/
+
+.alignleft		{float:left}
+.alignright		{float:right}
+.aligncenter	{text-align:center;}
+
+.text-left		{text-align:left}
+.text-right		{text-align:right}
+.text-center	{text-align:center}
+
+.sticky 		{}
+
+.no-margin		{margin:0 !important}
+
+/*
+Fix clearing issues as per: nicolasgallagher.com/micro-clearfix-hack/
+*/
+.grids:after,.clearfix:after,.grids:before,.clearfix:before{content:"";display:table}.grids:after,.clearfix:after{clear:both}.grids,.clearfix{zoom:1}
+ 
+/* =============================================================================
+   Images
+   ========================================================================== */
+img{/* Give it some text styles to offset alt text */color:#c00}
+
+.logo img{display:block}
+
+/* =============================================================================
+   Flash/Video
+   ========================================================================== */
+object,embed,video{max-width:100%;height:auto}
+
+/* =============================================================================
+   Messages
+   ========================================================================== */
+.message{display:block;padding:10px;margin-bottom:18px;color:#999;font-size:80%;font-weight:bold;text-align:center;line-height:18px;letter-spacing:.2em;border:1px dashed #ccc}
+.message [class*="icon-"]{font-size:18px;position:relative;top:2px;left:5px;margin-right:15px}
+.error{border-color:#fb5766}
+.success{border-color:#83ba77}
+.info [class*="icon-"]{color:#6cf}
+.warning [class*="icon-"]{color:#f99}
+
+
+/* =============================================================================
+   Misc
+   ========================================================================== */
+.accessibility{
+	/* Hide content off-screen without hiding from screen-readers. N.B. This is not suited to RTL languages */
+	position:absolute;left:-99999px
+}
+.more-link:after{
+	/* Too many people use &raquo; in their markup to signify progression/movement, that ain't cool. Let's insert that using content:""; */
+	content:" »";
+}
+
+
+/* =============================================================================
+  Flex Slider
+   ========================================================================== */
+.flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus{outline:0}.slides,.flex-control-nav,.flex-direction-nav{margin:0;padding:0;list-style:none}
+.flexslider .slides>li{display:none;-webkit-backface-visibility:hidden;-webkit-transform:translateZ(0)}.flexslider .slides {zoom:1}.flexslider .slides img{width:100%;display:block}.flex-pauseplay span{text-transform:capitalize}
+.flex-viewport {max-height:2000px;-webkit-transition:all 1s ease; -moz-transition:all 1s ease; transition:all 1s ease}
+.slides:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}html[xmlns] .slides{display:block}* html .slides{height:1%}
+.no-js .slides > li:first-child {display:block}
+
+
+
+/* =============================================================================
+   Swipebox Core Style
+   ========================================================================== */
+.swipebox-overflow-hidden{overflow:hidden!important}#swipebox-overlay img{border:none!important}#swipebox-overlay{width:100%;height:100%;position:fixed;top:0;left:0;opacity:0;z-index:9999;overflow:hidden;display:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}#swipebox-slider{height:100%;left:0;top:0;width:100%;white-space:nowrap;position:absolute}#swipebox-slider .slide{background:url("../images/loading.gif") no-repeat center center;height:100%;line-height:1px;text-align:center;width:100%;display:inline-block}#swipebox-slider .slide:before{content:"";display:inline-block;height:50%;width:1px;margin-right:-1px}#swipebox-slider .slide img{display:inline-block;max-height:100%;max-width:100%;width:auto;height:auto;vertical-align:middle}#swipebox-action,#swipebox-caption{position:absolute;left:0;z-index:999;height:50px;width:100%}#swipebox-action{bottom:-50px}#swipebox-action.visible-bars{bottom:0}#swipebox-action.force-visible-bars{bottom:0!important}#swipebox-caption{top:-50px;text-align:center}#swipebox-caption.visible-bars{top:0}#swipebox-caption.force-visible-bars{top:0!important}#swipebox-action #swipebox-prev,#swipebox-action #swipebox-next,#swipebox-action #swipebox-close{background-image:url("../images/gallery-controls.png");background-repeat:no-repeat;border:none!important;text-decoration:none!important;cursor:pointer;position:absolute;width:50px;height:50px;top:0}#swipebox-action #swipebox-close{background-position:15px 12px;left:40px}#swipebox-action #swipebox-prev{background-position:-32px 13px;right:100px}#swipebox-action #swipebox-next{background-position:-78px 13px;right:40px}#swipebox-action #swipebox-prev.disabled,#swipebox-action #swipebox-next.disabled{filter:alpha(opacity=30);opacity:.3}#swipebox-slider.rightSpring{-moz-animation:rightSpring .3s;-webkit-animation:rightSpring .3s}#swipebox-slider.leftSpring{-moz-animation:leftSpring .3s;-webkit-animation:leftSpring .3s}@-moz-keyframes rightSpring{0%{margin-left:0}50%{margin-left:-30px}100%{margin-left:0}}@-moz-keyframes leftSpring{0%{margin-left:0}50%{margin-left:30px}100%{margin-left:0}}@-webkit-keyframes rightSpring{0%{margin-left:0}50%{margin-left:-30px}100%{margin-left:0}}@-webkit-keyframes leftSpring{0%{margin-left:0}50%{margin-left:30px}100%{margin-left:0}}
+
+/* Skin */
+#swipebox-overlay{background:#0d0d0d}
+#swipebox-action,#swipebox-caption{text-shadow:1px 1px 1px black;background-color:#0d0d0d;background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#0d0d0d),color-stop(100%,#000));background-image:-webkit-linear-gradient(#0d0d0d,#000);background-image:-moz-linear-gradient(#0d0d0d,#000);background-image:-o-linear-gradient(#0d0d0d,#000);background-image:linear-gradient(#0d0d0d,#000);-webkit-box-shadow:0 1px 1px 1px #212121,inset 0 1px 1px 1px black;-moz-box-shadow:0 1px 1px 1px #212121,inset 0 1px 1px 1px black;box-shadow:0 1px 1px 1px #212121,inset 0 1px 1px 1px black;filter:alpha(opacity=95);opacity:.95}
+#swipebox-action{-webkit-box-shadow:0 -1px -1px 1px #212121,inset 0 -1px -1px 1px black;-moz-box-shadow:0 -1px -1px 1px #212121,inset 0 -1px -1px 1px black;box-shadow:0 -1px -1px 1px #212121,inset 0 -1px -1px 1px black}
+#swipebox-caption{color:white!important;font-size:15px;line-height:43px;font-family:Helvetica,Arial,sans-serif}
+
+
+
+/* =============================================================================
+   Masonry
+   ========================================================================== */
+.masonry,.masonry .masonry-brick{-webkit-transition-duration:.7s;-moz-transition-duration:.7s;-ms-transition-duration:.7s;-o-transition-duration:.7s;transition-duration:.7s}.masonry{-webkit-transition-property:height,width;-moz-transition-property:height,width;-ms-transition-property:height,width;-o-transition-property:height,width;transition-property:height,width}.masonry .masonry-brick{-webkit-transition-property:left,right,top;-moz-transition-property:left,right,top;-ms-transition-property:left,right,top;-o-transition-property:left,right,top;transition-property:left,right,top}
+
+
+
+/* =============================================================================
+   Sidebar in Mobile View
+   ========================================================================== */
+#outer-wrap{width:100%;position:relative;overflow:hidden}#inner-wrap{width:100%;position:relative}#pageslide{display:none;width:100%;z-index:200;overflow:hidden}#pageslide .block{z-index:2;position:relative;}
+
+@media only screen and (max-width:800px){#pageslide{display:block;position:absolute;top:0}#pageslide:not(:target){z-index:1;height:0}.js-ready #pageslide{width:70%;height:100%;background:#242628;-webkit-box-shadow:inset -1.5em 0 1.5em -0.75em rgba(0,0,0,0.5);-moz-box-shadow:inset -1.5em 0 1.5em -0.75em rgba(0,0,0,0.5);box-shadow:inset -1.5em 0 1.5em -0.75em rgba(0,0,0,0.5)}.js-ready #pageslide{left:-70%}.js-ready #inner-wrap{left:0}.js-nav #inner-wrap{left:70%}.csstransforms3d.csstransitions.js-ready #pageslide{left:0;-webkit-transform:translate3d(-100%,0,0);-moz-transform:translate3d(-100%,0,0);-ms-transform:translate3d(-100%,0,0);-o-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-o-backface-visibility:hidden;backface-visibility:hidden}.csstransforms3d.csstransitions.js-ready #inner-wrap{left:0!important;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-webkit-transition:-webkit-transform 500ms ease;-moz-transition:-moz-transform 500ms ease;-o-transition:-o-transform 500ms ease;transition:transform 500ms ease;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-o-backface-visibility:hidden;backface-visibility:hidden}.csstransforms3d.csstransitions.js-nav #inner-wrap{-webkit-transform:translate3d(70%,0,0) scale3d(1,1,1);-moz-transform:translate3d(70%,0,0) scale3d(1,1,1);-ms-transform:translate3d(70%,0,0) scale3d(1,1,1);-o-transform:translate3d(70%,0,0) scale3d(1,1,1);transform:translate3d(70%,0,0) scale3d(1,1,1)}.csstransforms3d.csstransitions.js-ready #pageslide .block{filter:alpha(opacity=70);opacity:.7;-webkit-transition:opacity 300ms 100ms,-webkit-transform 500ms ease;-webkit-transition-delay:ease,0s;-moz-transition:opacity 300ms 100ms ease,-moz-transform 500ms ease;-o-transition:opacity 300ms 100ms ease,-o-transform 500ms ease;transition:opacity 300ms 100ms ease,transform 500ms ease;-webkit-transform:translate3d(70%,0,0) scale3d(0.9,0.9,0.9);-moz-transform:translate3d(70%,0,0) scale3d(0.9,0.9,0.9);-ms-transform:translate3d(70%,0,0) scale3d(0.9,0.9,0.9);-o-transform:translate3d(70%,0,0) scale3d(0.9,0.9,0.9);transform:translate3d(70%,0,0) scale3d(0.9,0.9,0.9);-webkit-transform-origin:50% 0;-moz-transform-origin:50% 0;-ms-transform-origin:50% 0;-o-transform-origin:50% 0;transform-origin:50% 0}.csstransforms3d.csstransitions.js-nav #pageslide .block{filter:alpha(opacity=100);opacity:1;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}}
+
+
+
+/* =============================================================================
+   CSS animation
+   ========================================================================== */
+.animated{-webkit-transform:translate3d(0,0,0);-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1.2s;-moz-animation-duration:1.2s;-ms-animation-duration:1.2s;-o-animation-duration:1.2s;animation-duration:1.2s}
+@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-moz-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@-o-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;-moz-animation-name:fadeIn;-o-animation-name:fadeIn;animation-name:fadeIn}
+
+
+
+/* =============================================================================
+   WordPress Core
+   ========================================================================== */
+/* Calendar */
+#wp-calendar{width:100%;border:1px solid #ddd}#wp-calendar tr{background:0}#wp-calendar td{padding:2%}#wp-calendar caption{font-weight:bold;font-size:120%;text-align:center;margin:0 0 5px}#wp-calendar thead{border-bottom:1px solid #ddd}#wp-calendar thead th{height:30px;font-weight:normal}#wp-calendar tbody{border-bottom:1px solid #ddd}#wp-calendar tbody td{font-size:120%;text-align:center}#wp-calendar tbody td#today{color:#F36}#wp-calendar tbody td a{display:block;height:30px;line-height:30px;text-decoration:none;background:#fcc}#wp-calendar tfoot{font-size:90%;text-transform:uppercase}#wp-calendar tfoot #next{text-align:right}
+img.alignleft,.wp-caption.alignleft{margin-right:1.5em}
+img.alignright,.wp-caption.alignright{margin-left:1.5em}
+.wp-caption.alignleft img,.wp-caption.alignright img{margin-left:0;margin-right:0}
+
+
+
+/* =============================================================================
+   Print
+   ========================================================================== */
+/*
+Good ol' fashioned paper...
+*/
+@media print{
+
+/*
+Give everything some decent contrast.
+*/
+*{background-color:#fff;color:#000;text-shadow:none!important;}
+
+/*
+Set a nice measure and take the font down to print-acceptable sizes.
+*/
+body{font-size:0.75em; /* 12px (if base font-size was 16px) */}
+
+.wrapper{width:75%;margin:0 auto}
+
+/*
+A list of things you don't want printing. Add to/subtract from as necessary. 
+*/
+.nav,.footer{display:none}
+.logo img{position:static}
+
+/*
+Linearise
+*/
+.grids{width:auto}
+[class*="grid-"]{width:auto;float:none;clear:both}
+
+/*
+Don't let images break anything.
+*/
+img{max-width:100%;height:auto}
+
+/*
+Messages look odd with just borders.
+*/
+.message{border:0;font-weight:700}
+
+/*
+Display the href of any links.
+*/
+a:link:after,a:visited:after{content:"(" attr(href)")";font-size:smaller}
+
+/*
+Any links that are root relative to your site need prepending with your URL.
+*/
+a[href^="/"]:after{content:"(http://yoururlhere.com" attr(href)")";font-size:smaller}
+
+/*
+Any Flash/video content can't be printed so leave a message.
+*/
+object:after{content:"Flash/video content. Head to http://yoururlhere.com/ to view this content.";display:block;font-weight:700;margin-bottom:1.5em}
+}
